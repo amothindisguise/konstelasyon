@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-text-color: brown;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header,
+footer {
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    color: var(--main-text-color);
+    padding: 10px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.logo a {
+    font-size: 32px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+nav {
+    align-content: center;
+}
+
+.header ul {
+    display: flex;
+    gap: 24px;
+}
+
+.header li {
+    list-style-type: none;
+}
+
+.header li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+    background-image: url('../images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 7vw;
+}
+
+.hero-text p {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.blog h1,
+.about h1,
+.contact h1 {
+    font-size: 7vw;
+    padding: 60px 0 15px;
+    color: var(--main-text-color);
+}
+
+.blog {
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+}
+
+.blog h1 {
+    align-items: flex-start;
+}
+
+.blog ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blog li {
+    list-style-type: none;
+}
+
+.blog a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.blog a:hover {
+    text-decoration: underline;
+}
+
+.about {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer {
+    margin-top: auto;
+}
